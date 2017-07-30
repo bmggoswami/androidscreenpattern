@@ -1,0 +1,200 @@
+$top-row-one: 82px;
+$extreme-left:70px;
+$width:76px;
+
+.patt-holder{
+    width: 310px;
+    height: 340px;
+    background: #3382c0;
+    background-size: auto 100%;
+    -ms-touch-action: none;
+    position: relative;
+    margin: auto;
+    border: 3px solid;
+    display: table;
+    margin-top: 10px;
+}
+.patt-wrap{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 28px;
+}
+.patt-wrap li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.patt-circ {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 15px!important;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;            
+}
+.patt-dots {
+    background: #FFF;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+.patt-lines {
+  border-radius: 5px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  transform-origin: 5px 5px;
+  -ms-transform-origin: 5px 5px;
+  /* IE 9 */
+  -webkit-transform-origin: 5px 5px;
+}
+.patt-hidden .patt-lines {
+  display: none;
+}
+.patt-circ.hovered {
+  border: 3px solid #009900;
+}
+.patt-error .patt-circ.hovered {
+  border: 3px solid #BA1B26;
+}
+.patt-hidden .patt-circ.hovered {
+  border: 0;
+}
+.controls{    
+    text-align: center;    
+}
+.controls button{    
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    width: 10%;
+    font-weight: bold;
+    cursor: pointer;
+}
+.patt-lines.from-one-two, .patt-lines.from-two-one{
+    top: $top-row-one;
+    width: $width;
+    left: $extreme-left;
+    transform: rotate(0deg);
+}
+
+.patt-lines.from-one-four,.patt-lines.from-four-one {
+    top: $top-row-one;
+    width: 85px;
+    left: 62px;
+    transform: rotate(90deg);
+}
+.patt-lines.from-one-five,.patt-lines.from-five-one {
+    top: 82px;
+    width: 120px;
+    left: 65px; 
+    transform: rotate(45deg);
+}
+.patt-lines.from-two-three,.patt-lines.from-three-two{
+    top:$top-row-one;
+    width: $width+10;
+    left: $extreme-left * 2 + 4;
+    transform: rotate(0deg);
+}
+.patt-lines.from-two-five,.patt-lines.from-five-two{
+    top:$top-row-one;
+    width: $width+10;
+    left: $extreme-left * 2 + 3;
+    transform: rotate(90deg);
+}
+.patt-lines.from-two-six,.patt-lines.from-six-two{
+    top:$top-row-one;
+    width: $width+45;
+    left: $extreme-left * 2 + 3;
+    transform: rotate(45deg);
+}
+.patt-lines.from-two-four,.patt-lines.from-four-two{
+    top:$top-row-one;
+    width: $width+42;
+    left: $extreme-left * 2 + 3;
+    transform: rotate(135deg);
+}
+.patt-lines.from-four-five,.patt-lines.from-five-four{
+    top: 161px;
+    width: 90px;
+    left: 63px;
+    transform: rotate(0deg);
+}
+.patt-lines.from-four-seven,.patt-lines.from-seven-four {
+    top: $top-row-one + $top-row-one + 6;
+    width: 85px;
+    left: 63px;
+    transform: rotate(90deg);
+}
+.patt-lines.from-four-eight,.patt-lines.from-eight-four {
+    top: 158px;
+    left: 67px;
+    transform: rotate(45deg);
+    width: 115px;
+}
+.patt-lines.from-five-six,.patt-lines.from-six-five {
+    top: 161px;
+    left: 146px;
+    transform: rotate(0deg);
+    width: 84px;
+}
+.patt-lines.from-five-eight,.patt-lines.from-eight-five {
+    top: 160px;
+    left: 143px;
+    transform: rotate(90deg);
+    width: 84px;
+}
+.patt-lines.from-five-nine,.patt-lines.from-nine-five {
+    top: 162px;
+    left: 143px;
+    transform: rotate(45deg);
+    width: 122px;
+}
+.patt-lines.from-seven-five,.patt-lines.from-five-seven {
+    top: 160px;
+    left: 143px;
+    transform: rotate(135deg);
+    width: 116px;
+}
+
+.patt-lines.from-seven-eight,.patt-lines.from-eight-seven {
+    top: 242px;
+    left: 63px;
+    transform: rotate(0deg);
+    width: 85px;
+}
+.patt-lines.from-nine-eight,.patt-lines.from-eight-nine {
+    top: 242px;
+    left: 143px;
+    transform: rotate(0deg);
+    width: 85px;
+}
+.patt-lines.from-six-three,.patt-lines.from-three-six {
+    top: 82px;
+    width: 86px;
+    left: 223px;
+    transform: rotate(90deg);
+}
+.patt-lines.from-five-three,.patt-lines.from-three-five {
+    top: 81px;
+    width: 118px;
+    left: 223px;
+    transform: rotate(135deg);
+}
+.patt-lines.from-nine-six,.patt-lines.from-six-nine {
+    top: 234px;
+    left: 223px;
+    transform: rotate(-90deg);
+    width: 85px;
+}
+
